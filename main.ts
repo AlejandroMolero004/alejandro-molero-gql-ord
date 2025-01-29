@@ -9,7 +9,7 @@ if(!MONGO_URL){
 }
 const client= new MongoClient(MONGO_URL)
 await client.connect()
-
+ 
 const db=client.db("restaurante")
 
 /*const coleccioncomensales=db.collection<comensaldb>("comensales")
