@@ -17,6 +17,7 @@ export const resolvers={
             if(!restaurante) return null
             return restaurante
         },
+        
         getRestaurants:async(_:unknown,args:{id:string},ctx:context):Promise<restaurantedb[]|null>=>{
             const restaurante=await ctx.coleccionrestaurante.find().toArray()
             if(!restaurante) return null
